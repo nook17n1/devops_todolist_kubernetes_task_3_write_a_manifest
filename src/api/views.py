@@ -6,7 +6,6 @@ from lists.models import Todo, TodoList
 
 from django.http import HttpResponse
 from django.views.decorators.http import require_GET
-from django.utils import timezone
 import time
 
 start_time = time.time()

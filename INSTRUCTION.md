@@ -11,6 +11,6 @@ Use command: kubectl port-forward pod/todoapp 8081:8080 -n todoapp
 3. How to test the application using the `busyboxplus:curl` container.
 Run commands:
 kubectl get pods -n todoapp -o wide
-Find IP under container name busybox
-kubectl exec -it -n todoapp -- sh
-curl <IP busybox>
+Find IP under container name todoapp-pod
+kubectl exec -it busybox -n todoapp -- sh
+curl http://<todoapp-pod-ip>:8080
