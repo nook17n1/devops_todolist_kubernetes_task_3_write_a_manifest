@@ -1,6 +1,6 @@
 1. How to apply all manifests.
 Go to the folder with manifests and run commands:
-cd infrastructure
+cd .infrastructure
 kubectl apply -f namespace.yml
 kubectl apply -f busybox.yml
 kubectl apply -f todoapp-pod.yml
